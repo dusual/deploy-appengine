@@ -2120,8 +2120,8 @@ function run() {
                 if (flagList)
                     appDeployCmd = appDeployCmd.concat(flagList);
             }
-            if (trafficSplit !== '') {
-                appDeployCmd.push('set-traffic build-service --splits v13=90,v14=10 --split-by COOKIE');
+            if (trafficSpglit !== '') {
+                appDeployCmd.push('set-traffic build-service --splits v14=90,v15=10 --split-by COOKIE');
             }
             // Get output of gcloud cmd.
             let output = '';
