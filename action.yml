@@ -68,6 +68,11 @@ inputs:
       --service-account=my-account@project.iam.gserviceaccount.com --no-cache
     required: false
 
+  trafficSplit:
+    description: |-
+      test
+    required: "false"
+
 outputs:
   url:
     description: URL of your App Engine Application
