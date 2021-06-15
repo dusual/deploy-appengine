@@ -71,7 +71,8 @@ inputs:
   trafficSplit:
     description: |-
       test
-    required: "false"
+    required: false
+    
 
 outputs:
   url:
