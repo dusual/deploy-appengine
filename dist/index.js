@@ -2057,7 +2057,7 @@ function run() {
             const promote = core.getInput('promote');
             const serviceAccountKey = core.getInput('credentials');
             const flags = core.getInput('flags');
-            const trafficSplit = code.getInput('trafficSplit');
+            const trafficSplit = core.getInput('trafficSplit');
 	    // Change working directory
             if (cwd)
                 process.chdir(cwd.trim());
@@ -2120,7 +2120,7 @@ function run() {
                 if (flagList)
                     appDeployCmd = appDeployCmd.concat(flagList);
             }
-            if (trafficSpglit !== '') {
+            if (trafficSplit !== '') {
                 appDeployCmd.push('set-traffic build-service --splits v14=90,v15=10 --split-by COOKIE');
             }
             // Get output of gcloud cmd.
